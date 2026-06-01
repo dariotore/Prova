@@ -7,6 +7,11 @@ const MODULES = [
   { title: "Eventi", href: MODULE_ROUTES.eventi, icon: "🎭", description: "Concerti, fiere, mostre ed eventi in città", color: "bg-purple-50 border-purple-200" },
   { title: "Servizi", href: MODULE_ROUTES.servizi, icon: "🏢", description: "Servizi comunali, sportelli e pratiche online", color: "bg-green-50 border-green-200" },
   { title: "Comunità", href: MODULE_ROUTES.comunita, icon: "👥", description: "Partecipazione civica e forum di quartiere", color: "bg-rose-50 border-rose-200" },
+  { title: "Segnalazioni", href: MODULE_ROUTES.segnalazioni, icon: "📢", description: "Segnala problemi urbani al Comune", color: "bg-red-50 border-red-200" },
+  { title: "Salute", href: MODULE_ROUTES.salute, icon: "🏥", description: "Ospedali, farmacie e prenotazioni CUP", color: "bg-teal-50 border-teal-200" },
+  { title: "Gastronomia", href: MODULE_ROUTES.gastronomia, icon: "🍷", description: "Ristoranti, mercati e prodotti tipici", color: "bg-orange-50 border-orange-200" },
+  { title: "Alloggi", href: MODULE_ROUTES.alloggi, icon: "🏨", description: "Hotel, B&B e appartamenti in città", color: "bg-indigo-50 border-indigo-200" },
+  { title: "Istruzione & Lavoro", href: MODULE_ROUTES.istruzione, icon: "🎓", description: "Scuole, università e opportunità di lavoro", color: "bg-yellow-50 border-yellow-200" },
 ];
 
 const MOCK_EVENTS = [
@@ -94,7 +99,7 @@ export default function HomePage() {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <h2 className="text-2xl font-bold text-[#003366] mb-6">Esplora Torino</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {MODULES.map((mod) => (
             <Link key={mod.href} href={mod.href} className={`rounded-xl border-2 p-6 hover:shadow-md transition-all hover:-translate-y-0.5 ${mod.color}`}>
               <div className="text-4xl mb-3">{mod.icon}</div>

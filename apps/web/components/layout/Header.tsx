@@ -10,7 +10,12 @@ const NAV_LINKS = [
   { label: "Mobilità", href: MODULE_ROUTES.mobilita },
   { label: "Eventi", href: MODULE_ROUTES.eventi },
   { label: "Servizi", href: MODULE_ROUTES.servizi },
+  { label: "Segnala", href: MODULE_ROUTES.segnalazioni },
   { label: "Comunità", href: MODULE_ROUTES.comunita },
+  { label: "Salute", href: MODULE_ROUTES.salute },
+  { label: "Gastronomia", href: MODULE_ROUTES.gastronomia },
+  { label: "Alloggi", href: MODULE_ROUTES.alloggi },
+  { label: "Istruzione", href: MODULE_ROUTES.istruzione },
 ];
 
 export default function Header() {
@@ -21,16 +26,16 @@ export default function Header() {
     <header className="bg-[#003366] text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 shrink-0">
             <span className="text-[#C8A951] font-bold text-2xl tracking-tight">Torino 360°</span>
           </Link>
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-4 overflow-x-auto">
             {NAV_LINKS.map((link) => (
-              <Link key={link.href} href={link.href} className="text-sm font-medium hover:text-[#C8A951] transition-colors duration-200">{link.label}</Link>
+              <Link key={link.href} href={link.href} className="text-sm font-medium hover:text-[#C8A951] transition-colors duration-200 whitespace-nowrap">{link.label}</Link>
             ))}
           </nav>
-          <div className="flex items-center gap-4">
-            <div className="hidden sm:flex items-center gap-1 text-xs">
+          <div className="flex items-center gap-3 shrink-0">
+            <div className="hidden xl:flex items-center gap-1 text-xs">
               {SUPPORTED_LANGUAGES.map((lang, i) => (
                 <span key={lang}>
                   <button onClick={() => setCurrentLang(lang)} className={`px-1 py-0.5 rounded transition-colors ${currentLang === lang ? "text-[#C8A951] font-bold" : "text-gray-300 hover:text-white"}`}>{lang}</button>

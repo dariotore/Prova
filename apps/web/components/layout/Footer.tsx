@@ -22,6 +22,8 @@ export default function Footer() {
                 { label: "Comunità", href: MODULE_ROUTES.comunita },
                 { label: "Salute", href: MODULE_ROUTES.salute },
                 { label: "Gastronomia", href: MODULE_ROUTES.gastronomia },
+                { label: "Alloggi", href: MODULE_ROUTES.alloggi },
+                { label: "Istruzione & Lavoro", href: MODULE_ROUTES.istruzione },
               ].map((link) => (
                 <li key={link.href}><Link href={link.href} className="hover:text-[#C8A951] transition-colors">{link.label}</Link></li>
               ))}

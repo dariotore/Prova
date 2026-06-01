@@ -8,6 +8,8 @@ export const MODULE_ROUTES = {
   segnalazioni: "/segnalazioni",
   salute: "/salute",
   gastronomia: "/gastronomia",
+  alloggi: "/alloggi",
+  istruzione: "/istruzione",
 } as const;
 
 export const SUPPORTED_LANGUAGES = ["IT", "EN", "FR", "DE", "ES", "JA", "ZH", "AR"] as const;

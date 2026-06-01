@@ -14,6 +14,8 @@ const NAV_LINKS = [
   { label: "Comunità", href: MODULE_ROUTES.comunita },
   { label: "Salute", href: MODULE_ROUTES.salute },
   { label: "Gastronomia", href: MODULE_ROUTES.gastronomia },
+  { label: "Alloggi", href: MODULE_ROUTES.alloggi },
+  { label: "Istruzione", href: MODULE_ROUTES.istruzione },
 ];
 
 export default function Header() {

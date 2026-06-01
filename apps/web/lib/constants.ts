@@ -5,6 +5,7 @@ export const MODULE_ROUTES = {
   eventi: "/eventi",
   servizi: "/servizi",
   comunita: "/comunita",
+  segnalazioni: "/segnalazioni",
 } as const;
 
 export const SUPPORTED_LANGUAGES = ["IT", "EN", "FR", "DE", "ES", "JA", "ZH", "AR"] as const;

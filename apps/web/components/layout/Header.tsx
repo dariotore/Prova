@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { label: "Mobilità", href: MODULE_ROUTES.mobilita },
   { label: "Eventi", href: MODULE_ROUTES.eventi },
   { label: "Servizi", href: MODULE_ROUTES.servizi },
+  { label: "Segnala", href: MODULE_ROUTES.segnalazioni },
   { label: "Comunità", href: MODULE_ROUTES.comunita },
 ];
 
@@ -24,13 +25,13 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2">
             <span className="text-[#C8A951] font-bold text-2xl tracking-tight">Torino 360°</span>
           </Link>
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-5">
             {NAV_LINKS.map((link) => (
               <Link key={link.href} href={link.href} className="text-sm font-medium hover:text-[#C8A951] transition-colors duration-200">{link.label}</Link>
             ))}
           </nav>
-          <div className="flex items-center gap-4">
-            <div className="hidden sm:flex items-center gap-1 text-xs">
+          <div className="flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-1 text-xs">
               {SUPPORTED_LANGUAGES.map((lang, i) => (
                 <span key={lang}>
                   <button onClick={() => setCurrentLang(lang)} className={`px-1 py-0.5 rounded transition-colors ${currentLang === lang ? "text-[#C8A951] font-bold" : "text-gray-300 hover:text-white"}`}>{lang}</button>

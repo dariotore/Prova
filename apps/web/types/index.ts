@@ -41,3 +41,21 @@ export interface Utente {
   preferenze: Record<string, string>;
   preferiti: string[];
 }
+
+export interface Segnalazione {
+  id: string;
+  tipo: string;
+  indirizzo: string;
+  descrizione: string;
+  stato: 'aperto' | 'in_elaborazione' | 'risolto';
+  data: string;
+}
+
+export interface Appuntamento {
+  id: string;
+  ufficio: string;
+  data: string;
+  ora: string;
+  motivo: string;
+  stato: 'confermato' | 'in_attesa' | 'annullato';
+}

@@ -13,7 +13,6 @@ export default function ComunitaPage() {
     { id: 4, titolo: "Qualità dell'aria in miglioramento: dati PM10 sotto la soglia critica", fonte: "Torino Today", data: "28 mag 2026", categoria: "Ambiente", categoriaColor: "bg-green-100 text-green-800" },
     { id: 5, titolo: "Juventus: grande attesa per la finale di Coppa Italia all'Allianz Stadium", fonte: "La Stampa", data: "27 mag 2026", categoria: "Sport", categoriaColor: "bg-red-100 text-red-800" },
   ];
-
   const quartieri = [
     { nome: "Centro", topics: 142, lastActivity: "2 ore fa" },
     { nome: "Crocetta", topics: 87, lastActivity: "5 ore fa" },
@@ -22,19 +21,16 @@ export default function ComunitaPage() {
     { nome: "Mirafiori", topics: 74, lastActivity: "12 ore fa" },
     { nome: "San Salvario", topics: 128, lastActivity: "1 ora fa" },
   ];
-
   const proposte = [
     { id: 1, titolo: "Più piste ciclabili nel quadrante nord", descrizione: "Proposta per estendere la rete ciclabile di 15 km nei quartieri Barriera di Milano e Aurora.", voti: 78 },
     { id: 2, titolo: "Giardini condivisi nei cortili delle scuole", descrizione: "Trasformare i cortili scolastici inutilizzati nei weekend in spazi verdi aperti alla comunità.", voti: 54 },
     { id: 3, titolo: "Fontane di acqua potabile nelle piazze principali", descrizione: "Installare almeno 10 nuove fontane nelle piazze più frequentate per ridurre l'uso di plastica.", voti: 91 },
   ];
-
   const blogPosts = [
     { id: 1, titolo: "Come funziona il bilancio partecipativo del Comune", estratto: "Ogni anno i cittadini possono votare i progetti da finanziare con una quota del bilancio comunale. Ecco come partecipare.", data: "28 mag 2026" },
     { id: 2, titolo: "Il progetto \"Porte Aperte\" trasforma gli spazi abbandonati", estratto: "Sedici edifici dismessi restituiti alla collettività: laboratori, orti urbani e sale prove per le associazioni.", data: "22 mag 2026" },
     { id: 3, titolo: "Assemblee di quartiere: calendario giugno 2026", estratto: "Tutte le date degli incontri pubblici di giugno quartiere per quartiere, con ordine del giorno e modalità di partecipazione.", data: "15 mag 2026" },
   ];
-
   return (
     <div className="min-h-screen bg-[#F5F5F0]">
       <section className="bg-[#003366] text-white py-16 px-4">
@@ -44,7 +40,6 @@ export default function ComunitaPage() {
           <p className="text-xl text-gray-200">Forum di quartiere, notizie locali, proposte dei cittadini e blog istituzionale.</p>
         </div>
       </section>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Notizie Locali</h2>
@@ -61,7 +56,6 @@ export default function ComunitaPage() {
             ))}
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Forum di Quartiere</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -77,7 +71,6 @@ export default function ComunitaPage() {
             ))}
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Proposte dei Cittadini</h2>
           <div className="space-y-4">
@@ -103,7 +96,6 @@ export default function ComunitaPage() {
             ))}
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Blog Istituzionale</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

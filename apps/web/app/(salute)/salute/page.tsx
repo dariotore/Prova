@@ -13,14 +13,12 @@ export default function SalutePage() {
     { ospedale: "Mauriziano", indirizzo: "Largo Turati 62", attesa: "55 min", codici: 18, stato: "Sovraffollato", statoColor: "bg-red-100 text-red-700" },
     { ospedale: "Regina Margherita (pediatrico)", indirizzo: "Piazza Polonia 94", attesa: "25 min", codici: 6, stato: "Normale", statoColor: "bg-green-100 text-green-700" },
   ];
-
   const farmacie = [
     { nome: "Farmacia Centrale", indirizzo: "Via Roma 143", telefono: "011 5612345", orari: "Aperta 24h", aperta: true },
     { nome: "Farmacia San Carlo", indirizzo: "Corso Vittorio Emanuele II 55", telefono: "011 5478901", orari: "Aperta 24h", aperta: true },
     { nome: "Farmacia Aurora", indirizzo: "Corso Giulio Cesare 12", telefono: "011 2345678", orari: "8:30–22:00", aperta: true },
     { nome: "Farmacia Lingotto", indirizzo: "Via Nizza 280", telefono: "011 6789012", orari: "9:00–13:00 / 15:00–19:00", aperta: false },
   ];
-
   return (
     <div className="min-h-screen bg-[#F5F5F0]">
       <section className="bg-[#003366] text-white py-16 px-4">
@@ -30,7 +28,6 @@ export default function SalutePage() {
           <p className="text-xl text-gray-200">Pronto soccorso, farmacie di turno, prenotazioni CUP e monitoraggio qualità dell&apos;aria.</p>
         </div>
       </section>
-
       <section className="bg-red-700 text-white py-6 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -49,7 +46,6 @@ export default function SalutePage() {
           </div>
         </div>
       </section>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Pronto Soccorso</h2>
@@ -80,7 +76,6 @@ export default function SalutePage() {
             </div>
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Farmacie di Turno</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -99,7 +94,6 @@ export default function SalutePage() {
             ))}
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Prenota CUP</h2>
           <div className="bg-white rounded-xl shadow-sm p-6 max-w-2xl">
@@ -108,7 +102,6 @@ export default function SalutePage() {
             <a href="#" className="inline-block bg-[#003366] text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-[#004080] transition-colors">Prenota una visita →</a>
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Alert Meteo e Qualità dell&apos;Aria</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

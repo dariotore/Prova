@@ -17,18 +17,8 @@ export default function Error({ error, reset }: ErrorProps) {
           {error.message || "Qualcosa è andato storto. Riprova o torna alla home."}
         </p>
         <div className="flex gap-3 flex-wrap justify-center">
-          <button
-            onClick={reset}
-            className="px-5 py-2 bg-[#003366] text-white font-semibold rounded hover:bg-[#002244] transition-colors"
-          >
-            Riprova
-          </button>
-          <Link
-            href="/"
-            className="px-5 py-2 border-2 border-[#003366] text-[#003366] font-semibold rounded hover:bg-[#003366] hover:text-white transition-colors"
-          >
-            Torna alla Home
-          </Link>
+          <button onClick={reset} className="px-5 py-2 bg-[#003366] text-white font-semibold rounded hover:bg-[#002244] transition-colors">Riprova</button>
+          <Link href="/" className="px-5 py-2 border-2 border-[#003366] text-[#003366] font-semibold rounded hover:bg-[#003366] hover:text-white transition-colors">Torna alla Home</Link>
         </div>
       </div>
     </div>

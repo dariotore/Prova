@@ -11,7 +11,6 @@ export default function GastronomiaPage() {
     { emoji: "🍷", titolo: "L'Aperitivo Torinese", descrizione: "Vermouth, Campari Soda e stuzzichini nelle piazze storiche" },
     { emoji: "🧀", titolo: "Prodotti del Territorio", descrizione: "Grissini, bagna cauda, tajarin: la tradizione piemontese in tavola" },
   ];
-
   const ristoranti = [
     { nome: "Trattoria Valenza", cucina: "Piemontese", zona: "Centro", prezzo: "€€", stelle: 4, descrizione: "Cucina casalinga piemontese con ingredienti di stagione e vini locali." },
     { nome: "Pastificio Defilippis", cucina: "Pasta Artigianale", zona: "Crocetta", prezzo: "€", stelle: 4, descrizione: "Pasta fresca artigianale dal 1872, tajarin e agnolotti del plin imperdibili." },
@@ -20,23 +19,20 @@ export default function GastronomiaPage() {
     { nome: "Combal.Zero", cucina: "Creativa", zona: "Rivoli", prezzo: "€€€", stelle: 5, descrizione: "Cucina d'avanguardia dello chef Davide Scabin, nel Castello di Rivoli." },
     { nome: "Scannabue", cucina: "Bistrot", zona: "San Salvario", prezzo: "€€", stelle: 4, descrizione: "Ambiente informale e vivace nel quartiere San Salvario, ottimo aperitivo." },
   ];
-
   const mercati = [
     { nome: "Porta Palazzo", note: "Il più grande mercato europeo all'aperto", orari: "Lun–Ven 7:30–13:30, Sab 7:30–14:00" },
     { nome: "Mercato di Piazza Madama Cristina", note: "Mercato rionale storico del quartiere Crocetta", orari: "Lun–Sab 7:30–13:30" },
     { nome: "Eataly Torino Lingotto", note: "Tempio del cibo italiano di qualità nell'ex Fiat Lingotto", orari: "Tutti i giorni 10:00–22:00" },
     { nome: "Mercato Coldiretti", note: "Ogni 1° sabato del mese, Piazza Palazzo di Città", orari: "1° sabato del mese, 9:00–15:00" },
   ];
-
   const prodotti = [
     { nome: "Grissini", emoji: "🥖" },
     { nome: "Vermouth", emoji: "🍸" },
     { nome: "Gianduiotto", emoji: "🍫" },
-    { nome: "Bagna Cauda", emoji: "🫕" },
+    { nome: "Bagna Cauda", emoji: "�b5" },
     { nome: "Tajarin", emoji: "🍝" },
     { nome: "Bicerin", emoji: "☕" },
   ];
-
   return (
     <div className="min-h-screen bg-[#F5F5F0]">
       <section className="bg-[#003366] text-white py-16 px-4">
@@ -46,7 +42,6 @@ export default function GastronomiaPage() {
           <p className="text-xl text-gray-200">Ristoranti, mercati, prodotti tipici e itinerari enogastronomici alla scoperta della cucina torinese.</p>
         </div>
       </section>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Itinerari Enogastronomici</h2>
@@ -60,7 +55,6 @@ export default function GastronomiaPage() {
             ))}
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Ristoranti in Evidenza</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,7 +77,6 @@ export default function GastronomiaPage() {
             ))}
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Mercati e Prodotti Tipici</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -96,7 +89,6 @@ export default function GastronomiaPage() {
             ))}
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-bold text-[#003366] mb-6">Prodotti Tipici da non Perdere</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">

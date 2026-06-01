@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { MODULE_ROUTES } from "@/lib/constants";
-
 const PROSSIME_PARTENZE = [
   { linea: "4", direzione: "Albertina", minuti: 2, tipo: "bus" },
   { linea: "13", direzione: "Rebaudengo", minuti: 5, tipo: "bus" },

@@ -6,6 +6,8 @@ export const MODULE_ROUTES = {
   servizi: "/servizi",
   comunita: "/comunita",
   segnalazioni: "/segnalazioni",
+  salute: "/salute",
+  gastronomia: "/gastronomia",
 } as const;
 
 export const SUPPORTED_LANGUAGES = ["IT", "EN", "FR", "DE", "ES", "JA", "ZH", "AR"] as const;

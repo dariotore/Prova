@@ -1,3 +1,5 @@
+"use client";
+
 const SERVIZI = [
   { icon: "🏠", titolo: "Cambio Residenza", descrizione: "Richiedi il cambio online senza recarti allo sportello" },
   { icon: "📄", titolo: "Certificati Anagrafici", descrizione: "Scarica certificati di residenza, stato civile, nascita" },

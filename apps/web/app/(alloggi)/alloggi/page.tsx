@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Alloggi",
+  description: "Hotel, B&B e appartamenti a Torino",
+};
+
 const ACCOMMODATIONS = [
   { id: 1, nome: "Grand Hotel Sitea", zona: "Centro", tipo: "Hotel", stelle: 5, prezzo: 180, descrizione: "Lusso nel cuore di Torino" },
   { id: 2, nome: "NH Torino Lingotto", zona: "Lingotto", tipo: "Hotel", stelle: 4, prezzo: 95, descrizione: "Design moderno ex fabbrica Fiat" },

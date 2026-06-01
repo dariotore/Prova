@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gastronomia",
+  description: "Ristoranti, mercati e prodotti tipici torinesi",
+};
+
 export default function GastronomiaPage() {
   const itinerari = [
     { emoji: "🍫", titolo: "Tour delle Cioccolaterie", descrizione: "Gobino, Peyrano, Guido Castagna: il cioccolato artigianale torinese" },

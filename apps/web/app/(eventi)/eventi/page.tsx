@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import type { Evento } from "@/types";
+
+export const metadata: Metadata = {
+  title: "Eventi",
+  description: "Concerti, fiere e mostre a Torino",
+};
 
 const CATEGORIE = ["Tutti", "Cultura", "Musica", "Sport", "Fiere", "Mercati", "Teatro"];
 const FILTRI_DATA = ["Questa settimana", "Questo mese", "Scegli date"];

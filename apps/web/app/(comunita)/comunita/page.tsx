@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Comunità",
+  description: "Notizie, forum e partecipazione civica a Torino",
+};
+
 export default function ComunitaPage() {
   const notizie = [
     { id: 1, titolo: "Approvato il nuovo piano urbanistico per il quartiere Aurora", fonte: "La Stampa", data: "31 mag 2026", categoria: "Politica", categoriaColor: "bg-blue-100 text-blue-800" },

@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Salute",
+  description: "Ospedali, farmacie e prenotazioni sanitarie a Torino",
+};
+
 export default function SalutePage() {
   const pronto_soccorso = [
     { ospedale: "Molinette", indirizzo: "Via Genova 3", attesa: "45 min", codici: 12, stato: "Sovraffollato", statoColor: "bg-red-100 text-red-700" },

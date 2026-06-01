@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Istruzione & Lavoro",
+  description: "Scuole, università e opportunità lavorative a Torino",
+};
+
 const SCUOLE = [
   { nome: "Scuola dell'Infanzia Arcobaleno", zona: "Mirafiori", tipo: "3-6 anni", tel: "011 234 5678", categoria: "Nidi e Infanzia" },
   { nome: "IC Don Milani", zona: "Barriera di Milano", tipo: "Primaria+Media", tel: "011 234 5679", categoria: "Primarie e Secondarie" },

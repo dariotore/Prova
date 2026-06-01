@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import type { Attrazione } from "@/types";
+
+export const metadata: Metadata = {
+  title: "Turismo",
+  description: "Musei, monumenti e attrazioni di Torino",
+};
 
 const CATEGORIE = ["Tutti", "Musei", "Monumenti", "Natura", "Chiese", "Palazzi"];
 const ZONE = ["Tutte le zone", "Centro", "Crocetta", "Lingotto", "Barriera di Milano", "Mirafiori", "Collina"];

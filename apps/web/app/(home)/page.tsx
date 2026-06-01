@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { MODULE_ROUTES } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Scopri Torino 360°: il portale ufficiale della Città di Torino per turismo, servizi, mobilità ed eventi.",
+};
 
 const MODULES = [
   { title: "Turismo", href: MODULE_ROUTES.turismo, icon: "🏛️", description: "Musei, monumenti, attrazioni e itinerari culturali", color: "bg-amber-50 border-amber-200" },

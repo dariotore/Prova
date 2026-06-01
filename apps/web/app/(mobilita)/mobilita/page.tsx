@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mobilità",
+  description: "GTT, parcheggi e mobilità sostenibile a Torino",
+};
+
 const PROSSIME_PARTENZE = [
   { linea: "4", direzione: "Albertina", minuti: 2, tipo: "bus" },
   { linea: "13", direzione: "Rebaudengo", minuti: 5, tipo: "bus" },
